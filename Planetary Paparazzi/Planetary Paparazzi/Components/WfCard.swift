@@ -43,7 +43,6 @@ struct WfCard : View {
             .background(Color.init(.systemGray5))
 
             VStack(alignment: .leading , spacing: 0) {
-                
                 Text(apod.getFormatterDate())
                     .font(.headline)
                     .foregroundColor(.white)
@@ -83,9 +82,8 @@ struct WfCard : View {
 struct BlockView_Previews : PreviewProvider {
     static var previews: some View {
         Group{
-            WfCard(block: .init(content: arrayApods[0])  )
-
-            WfCard(block: .init(content: arrayApods[1]) )
+            WfCard(block: .init(content: arrayApods[0]))
+            WfCard(block: .init(content: arrayApods[1]))
                 .colorScheme(.dark)
         }
         .padding()

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SplashView: View {
-    
     @State private var offset = CGSize.zero
     @State private var isActive = false
     

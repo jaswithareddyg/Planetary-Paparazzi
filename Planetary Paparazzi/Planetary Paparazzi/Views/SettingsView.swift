@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SettingView : View {
-    
     @EnvironmentObject var setting: UserSetting
     
     var body: some View {
@@ -20,7 +19,6 @@ struct SettingView : View {
                             Image(systemName: "antenna.radiowaves.left.and.right")
                             Text("API Key")
                                 .padding(.trailing, 24)
-                            
                             Spacer()
                             
                             Text(setting.apiKey)
@@ -28,9 +26,7 @@ struct SettingView : View {
                                 .truncationMode(.tail)
                         }
                     }
-                    
-                    
-                    
+    
                     Toggle(isOn: $setting.loadHdImage) {
                         HStack {
                             Image(systemName: "map")

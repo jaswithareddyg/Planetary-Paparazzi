@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WaterfallView : View {
-    
     @EnvironmentObject var userData: UserData
     
     func reloadSelected() {

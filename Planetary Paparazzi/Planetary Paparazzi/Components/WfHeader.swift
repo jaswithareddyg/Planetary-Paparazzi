@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WfHeader: View {
-    
     var currentDateStr: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM, dd"
@@ -16,9 +15,7 @@ struct WfHeader: View {
     }
     
     var reloadDelegate: () -> ()
-    
     @Binding var loadState: Bool
-    
     @State var btnAngle = 180.0
     
     var body: some View {
@@ -64,12 +61,10 @@ struct WfHeader: View {
     }
 }
 
-#if DEBUG
+
 struct Header_Previews : PreviewProvider {
     static var previews: some View {
         WfHeader(reloadDelegate: {}, loadState: .constant(false) )
             .previewLayout(.sizeThatFits)
     }
 }
-#endif
-

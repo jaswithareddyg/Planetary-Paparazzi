@@ -75,7 +75,6 @@ struct Request {
     
     private func makeRequestHeader() -> [String: String] {
         var dict: [String: String] = [:]
-        //let reflection = Mirror(reflecting: self);
         dict.updateValue(api_key, forKey: ReflectionKey.api_key.rawValue)
         
         let dateFormat = self.formatter;

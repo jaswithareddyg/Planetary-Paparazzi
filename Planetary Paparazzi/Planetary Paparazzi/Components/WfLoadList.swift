@@ -111,7 +111,7 @@ extension WfLoadList: RequestDelegate {
     
 }
 
-#if DEBUG
+
 struct CardList_Previews : PreviewProvider {
     static var previews: some View {
         ScrollView{
@@ -119,5 +119,3 @@ struct CardList_Previews : PreviewProvider {
         }
     }
 }
-#endif
-

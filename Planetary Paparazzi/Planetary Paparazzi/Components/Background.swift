@@ -10,9 +10,7 @@ import UIKit
 
 struct Background : UIViewRepresentable {
     var color: UIColor
-    
     let blur: Bool
-    
     init(color: UIColor = .systemBackground, blur: Bool = false) {
         self.color = color
         self.blur = blur

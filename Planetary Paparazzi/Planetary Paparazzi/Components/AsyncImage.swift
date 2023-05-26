@@ -10,18 +10,15 @@ import Combine
 
 struct AsyncImage: View {
     let url: URL
-    
     @Binding var image: UIImage?
-    
     @State var loadTask: AnyCancellable? = nil
-    
     @State var imageName: String = "arrow.down.square.fill"
     
     var body: some View {
         VStack {
             if image == nil {
                 Placeholder(systemName: imageName, showTitle: nil)
-            }else {
+            } else {
                 Image(uiImage: image!)
                     .renderingMode(.original)
                     .resizable()

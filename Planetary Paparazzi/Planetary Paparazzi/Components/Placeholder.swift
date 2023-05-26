@@ -28,7 +28,6 @@ struct Placeholder : View {
                     .multilineTextAlignment(.center)
                     .padding([.leading, .trailing])
             }
-            
         }
     }
 }

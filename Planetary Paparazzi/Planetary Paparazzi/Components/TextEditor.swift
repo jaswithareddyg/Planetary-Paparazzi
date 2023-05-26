@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TextEditor: View {
     @Binding var original: String
-    
     @State var copy: String = ""
     
     var body: some View {
