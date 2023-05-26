@@ -1,5 +1,5 @@
 //
-//  WfHeader.swift
+//  Header.swift
 //  Planetary Paparazzi
 //
 //  Created by Jaswitha Reddy G on 5/21/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WfHeader: View {
+struct Header: View {
     var currentDateStr: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM, dd"
@@ -64,7 +64,7 @@ struct WfHeader: View {
 
 struct Header_Previews : PreviewProvider {
     static var previews: some View {
-        WfHeader(reloadDelegate: {}, loadState: .constant(false) )
+        Header(reloadDelegate: {}, loadState: .constant(false) )
             .previewLayout(.sizeThatFits)
     }
 }

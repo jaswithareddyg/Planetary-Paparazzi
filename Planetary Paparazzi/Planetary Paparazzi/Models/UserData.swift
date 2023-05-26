@@ -12,17 +12,17 @@ final class UserData: ObservableObject {
     private init() {}
     static let shared = UserData()
     enum Label: String, CaseIterable {
-        case recent = "Recent"
+        case today = "Today"
         case random = "Random"
     }
     
-    @Published var localApods: [BlockData] = []
+    @Published var curApods: [BlockData] = []
     @Published var randomApods: [BlockData] = []
     
     var selectedList: [BlockData] {
         switch currentLabel {
-        case .recent:
-            return localApods
+        case .today:
+            return curApods
         case .random:
             return randomApods
         }
@@ -44,7 +44,7 @@ final class UserData: ObservableObject {
         loadHandle = request.sendRequest()
     }
     
-    @Published var currentLabel: Label = .recent
+    @Published var currentLabel: Label = .today
     @Published var isLoading: Bool = false
     
     var loadHandle: AnyCancellable?

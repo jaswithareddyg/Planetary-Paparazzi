@@ -11,7 +11,7 @@
 		BC47FF372A206311005886FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF362A206311005886FE /* ContentView.swift */; };
 		BC47FF392A206313005886FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF382A206313005886FE /* Assets.xcassets */; };
 		BC47FF3C2A206313005886FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF3B2A206313005886FE /* Preview Assets.xcassets */; };
-		BC47FF452A2063F9005886FE /* WaterfallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF442A2063F9005886FE /* WaterfallView.swift */; };
+		BC47FF452A2063F9005886FE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF442A2063F9005886FE /* CardView.swift */; };
 		BC47FF472A20643A005886FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF462A20643A005886FE /* SettingsView.swift */; };
 		BC47FF492A206462005886FE /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF482A206462005886FE /* ModalView.swift */; };
 		BC47FF4C2A20649B005886FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF4B2A20649B005886FE /* Result.swift */; };
@@ -21,9 +21,9 @@
 		BC47FF542A206628005886FE /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF532A206628005886FE /* UserDefaults.swift */; };
 		BC47FF572A2067DE005886FE /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF562A2067DE005886FE /* AsyncImage.swift */; };
 		BC47FF592A206883005886FE /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF582A206883005886FE /* WebView.swift */; };
-		BC47FF5B2A2068B2005886FE /* WfHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5A2A2068B2005886FE /* WfHeader.swift */; };
-		BC47FF5D2A2068D7005886FE /* WfCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5C2A2068D7005886FE /* WfCard.swift */; };
-		BC47FF5F2A206973005886FE /* WfLoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5E2A206973005886FE /* WfLoadList.swift */; };
+		BC47FF5B2A2068B2005886FE /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5A2A2068B2005886FE /* Header.swift */; };
+		BC47FF5D2A2068D7005886FE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5C2A2068D7005886FE /* Card.swift */; };
+		BC47FF5F2A206973005886FE /* LoadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF5E2A206973005886FE /* LoadList.swift */; };
 		BC47FF612A2069B6005886FE /* TextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF602A2069B6005886FE /* TextEditor.swift */; };
 		BC47FF632A2069E4005886FE /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF622A2069E4005886FE /* Placeholder.swift */; };
 		BC47FF662A206A1D005886FE /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF652A206A1D005886FE /* Background.swift */; };
@@ -37,7 +37,7 @@
 		BC47FF362A206311005886FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC47FF382A206313005886FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC47FF3B2A206313005886FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC47FF442A2063F9005886FE /* WaterfallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallView.swift; sourceTree = "<group>"; };
+		BC47FF442A2063F9005886FE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BC47FF462A20643A005886FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BC47FF482A206462005886FE /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		BC47FF4B2A20649B005886FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -47,9 +47,9 @@
 		BC47FF532A206628005886FE /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		BC47FF562A2067DE005886FE /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		BC47FF582A206883005886FE /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		BC47FF5A2A2068B2005886FE /* WfHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WfHeader.swift; sourceTree = "<group>"; };
-		BC47FF5C2A2068D7005886FE /* WfCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WfCard.swift; sourceTree = "<group>"; };
-		BC47FF5E2A206973005886FE /* WfLoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WfLoadList.swift; sourceTree = "<group>"; };
+		BC47FF5A2A2068B2005886FE /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		BC47FF5C2A2068D7005886FE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BC47FF5E2A206973005886FE /* LoadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadList.swift; sourceTree = "<group>"; };
 		BC47FF602A2069B6005886FE /* TextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditor.swift; sourceTree = "<group>"; };
 		BC47FF622A2069E4005886FE /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		BC47FF652A206A1D005886FE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				BC47FF462A20643A005886FE /* SettingsView.swift */,
 				BC47FF482A206462005886FE /* ModalView.swift */,
 				BC47FF692A2070D9005886FE /* SplashView.swift */,
-				BC47FF442A2063F9005886FE /* WaterfallView.swift */,
+				BC47FF442A2063F9005886FE /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 			children = (
 				BC47FF562A2067DE005886FE /* AsyncImage.swift */,
 				BC47FF582A206883005886FE /* WebView.swift */,
-				BC47FF5A2A2068B2005886FE /* WfHeader.swift */,
-				BC47FF5C2A2068D7005886FE /* WfCard.swift */,
-				BC47FF5E2A206973005886FE /* WfLoadList.swift */,
+				BC47FF5A2A2068B2005886FE /* Header.swift */,
+				BC47FF5C2A2068D7005886FE /* Card.swift */,
+				BC47FF5E2A206973005886FE /* LoadList.swift */,
 				BC47FF602A2069B6005886FE /* TextEditor.swift */,
 				BC47FF622A2069E4005886FE /* Placeholder.swift */,
 				BC47FF652A206A1D005886FE /* Background.swift */,
@@ -228,9 +228,9 @@
 			files = (
 				BC47FF572A2067DE005886FE /* AsyncImage.swift in Sources */,
 				BC47FF522A206601005886FE /* UserSetting.swift in Sources */,
-				BC47FF5B2A2068B2005886FE /* WfHeader.swift in Sources */,
+				BC47FF5B2A2068B2005886FE /* Header.swift in Sources */,
 				BC47FF4C2A20649B005886FE /* Result.swift in Sources */,
-				BC47FF452A2063F9005886FE /* WaterfallView.swift in Sources */,
+				BC47FF452A2063F9005886FE /* CardView.swift in Sources */,
 				BC47FF662A206A1D005886FE /* Background.swift in Sources */,
 				BC47FF502A2065C2005886FE /* UserData.swift in Sources */,
 				BC47FF472A20643A005886FE /* SettingsView.swift in Sources */,
@@ -238,10 +238,10 @@
 				BC47FF372A206311005886FE /* ContentView.swift in Sources */,
 				BC47FF4E2A20650E005886FE /* Request.swift in Sources */,
 				BC47FF542A206628005886FE /* UserDefaults.swift in Sources */,
-				BC47FF5D2A2068D7005886FE /* WfCard.swift in Sources */,
+				BC47FF5D2A2068D7005886FE /* Card.swift in Sources */,
 				BC47FF6A2A2070D9005886FE /* SplashView.swift in Sources */,
 				BC47FF592A206883005886FE /* WebView.swift in Sources */,
-				BC47FF5F2A206973005886FE /* WfLoadList.swift in Sources */,
+				BC47FF5F2A206973005886FE /* LoadList.swift in Sources */,
 				BC47FF352A206311005886FE /* Planetary_PaparazziApp.swift in Sources */,
 				BC47FF492A206462005886FE /* ModalView.swift in Sources */,
 				BC47FF632A2069E4005886FE /* Placeholder.swift in Sources */,

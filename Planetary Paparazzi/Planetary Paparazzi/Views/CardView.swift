@@ -1,5 +1,5 @@
 //
-//  WaterfallView.swift
+//  CardView.swift
 //  Planetary Paparazzi
 //
 //  Created by Jaswitha Reddy G on 5/20/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WaterfallView : View {
+struct CardView : View {
     @EnvironmentObject var userData: UserData
     
     func reloadSelected() {
@@ -16,8 +16,8 @@ struct WaterfallView : View {
     
     var selectedContent: Binding<[BlockData]> {
         switch userData.currentLabel {
-        case .recent:
-            return $userData.localApods
+        case .today:
+            return $userData.curApods
         case .random:
             return $userData.randomApods
         }
@@ -25,7 +25,7 @@ struct WaterfallView : View {
     
     var body: some View {
         ScrollView {
-            WfHeader(reloadDelegate: reloadSelected, loadState: $userData.isLoading)
+            Header(reloadDelegate: reloadSelected, loadState: $userData.isLoading)
                 .environmentObject(userData)
                 .padding(.bottom, 8)
                 .zIndex(100.0)
@@ -39,7 +39,7 @@ struct WaterfallView : View {
             .frame(width: 275)
             .zIndex(100)
                 
-            WfLoadList(apodType: userData.currentLabel, contents: selectedContent)
+            LoadList(apodType: userData.currentLabel, contents: selectedContent)
             .padding([.top], 24)
             .opacity(userData.isLoading ? 0.6 : 1)
             
@@ -47,7 +47,7 @@ struct WaterfallView : View {
     }
 }
 
-extension WaterfallView: RequestDelegate {
+extension CardView: RequestDelegate {
     func requestError(_ error: Request.RequestError) {}
     func requestSuccess(_ apods: [BlockData], _ type: Request.LoadType) {
         if type == .refresh {
@@ -59,9 +59,9 @@ extension WaterfallView: RequestDelegate {
 }
 
 
-struct WaterfallView_Previews : PreviewProvider {
+struct CardView_Previews : PreviewProvider {
     static var previews: some View {
-        WaterfallView()
+        CardView()
         .environmentObject(UserData.shared)
     }
 }

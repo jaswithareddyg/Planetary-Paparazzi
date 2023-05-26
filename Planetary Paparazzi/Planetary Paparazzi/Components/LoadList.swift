@@ -1,5 +1,5 @@
 //
-//  WfLoadList.swift
+//  LoadList.swift
 //  Planetary Paparazzi
 //
 //  Created by Jaswitha Reddy G on 5/21/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct WfLoadList : View {
+struct LoadList : View {
     
     enum LoadMsgIcon: String {
         case loading = "cloud.rain"
@@ -17,11 +17,8 @@ struct WfLoadList : View {
     }
     
     var apodType: UserData.Label
-    
     @Binding var contents: [BlockData]
-    
     @State var isError: Bool = false
-    
     @State var errorMsg: String = ""
     
     var message: (LoadMsgIcon, String) {
@@ -47,7 +44,7 @@ struct WfLoadList : View {
                     }
             }else {
                 ForEach(contents) { apod in
-                    WfCard(block: apod)
+                    Card(block: apod)
                         .padding([.top, .bottom])
                 }
                 
@@ -69,7 +66,7 @@ struct WfLoadList : View {
         isError = false
         
         switch apodType {
-        case .recent:
+        case .today:
             fallthrough
         case .random:
             UserData.shared.loadHandle?.cancel()
@@ -79,7 +76,7 @@ struct WfLoadList : View {
     }
 }
 
-extension WfLoadList: RequestDelegate {
+extension LoadList: RequestDelegate {
     func requestError(_ error: Request.RequestError) {
         isError = true
         
@@ -107,15 +104,13 @@ extension WfLoadList: RequestDelegate {
             }
         }
     }
-    
-    
 }
 
 
 struct CardList_Previews : PreviewProvider {
     static var previews: some View {
         ScrollView{
-            WfLoadList(apodType: .recent, contents: .constant([]))
+            LoadList(apodType: .today, contents: .constant([]))
         }
     }
 }

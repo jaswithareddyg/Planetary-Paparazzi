@@ -1,5 +1,5 @@
 //
-//  WfCard.swift
+//  Card.swift
 //  Planetary Paparazzi
 //
 //  Created by Jaswitha Reddy G on 5/21/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WfCard : View {
+struct Card : View {
     @State var block: BlockData
     
     var apod: Result {
@@ -82,8 +82,8 @@ struct WfCard : View {
 struct BlockView_Previews : PreviewProvider {
     static var previews: some View {
         Group{
-            WfCard(block: .init(content: arrayApods[0]))
-            WfCard(block: .init(content: arrayApods[1]))
+            Card(block: .init(content: arrayApods[0]))
+            Card(block: .init(content: arrayApods[1]))
                 .colorScheme(.dark)
         }
         .padding()

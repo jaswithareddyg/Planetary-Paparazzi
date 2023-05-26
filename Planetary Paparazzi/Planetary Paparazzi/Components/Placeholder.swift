@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct Placeholder : View {
-    
     var systemName: String
     var showTitle: String?
     

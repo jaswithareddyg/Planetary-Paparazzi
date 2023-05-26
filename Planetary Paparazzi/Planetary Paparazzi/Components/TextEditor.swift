@@ -34,7 +34,6 @@ struct TextEditor: View {
         .onAppear{
             self.copy = self.original
         }
-        
     }
 }
 
