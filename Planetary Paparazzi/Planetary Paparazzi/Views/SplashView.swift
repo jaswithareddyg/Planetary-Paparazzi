@@ -21,21 +21,12 @@ struct SplashView: View {
                 Spacer()
                 VStack {
                     Spacer()
-                    Image("splashscreen")
-                        .resizable()
-                        .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
                     // text with custom font and effect
                     Text("Planetary Paparazzi")
-                        .font(.custom("Pokemon Solid", size: 70))
-                        .foregroundColor(.yellow)
+                        .font(.custom("ZilapOrionPersonalUseFuturistic-DzA3.ttf", size: 60))
+                        .foregroundColor(Color(hue: 0.001, saturation: 0.0, brightness: 0.98))
                         .multilineTextAlignment(.center)
                         .padding()
-                        .overlay(
-                            Text("Planetary Paparazzi")
-                                .font(.custom("Pokemon Hollow", size: 70))
-                                .foregroundColor(.blue)
-                                .multilineTextAlignment(.center)
-                    )
                     Spacer()
                 }
                 Spacer()
@@ -43,11 +34,12 @@ struct SplashView: View {
             .offset(offset)
             .onAppear {
                 withAnimation(Animation.easeInOut(duration: 3.0).repeatForever(autoreverses: true)) {
-                    self.offset = CGSize(width: 0, height: 20)
+                    self.offset = CGSize(width: 0, height: 10)
                 }
             }
             .background(
-                LinearGradient(gradient: Gradient(colors: [#0F2027, .red]), startPoint: .top, endPoint: .bottom)
+                LinearGradient(gradient: Gradient(colors:[Color(hex: "2C5364"), Color(hex: "203A43"), Color(hex: "0F2027")]), startPoint: .top, endPoint: .bottom)
+
                             .ignoresSafeArea()
             )
             
@@ -61,6 +53,23 @@ struct SplashView: View {
         }
     }
 }
+
+/// extension to convert hex codes to RGB values that Swift understands.
+extension Color {
+    init(hex: String) {
+        let scanner = Scanner(string: hex)
+        var rgbValue: UInt64 = 0
+
+        scanner.scanHexInt64(&rgbValue)
+
+        let r = Double((rgbValue & 0xff0000) >> 16) / 255.0
+        let g = Double((rgbValue & 0x00ff00) >> 8) / 255.0
+        let b = Double(rgbValue & 0x0000ff) / 255.0
+
+        self.init(red: r, green: g, blue: b)
+    }
+}
+
 
 struct SplashView_Previews: PreviewProvider {
     static var previews: some View {

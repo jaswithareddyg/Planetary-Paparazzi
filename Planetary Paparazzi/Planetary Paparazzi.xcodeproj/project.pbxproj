@@ -55,6 +55,8 @@
 		BC47FF652A206A1D005886FE /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		BC47FF672A207033005886FE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BC47FF692A2070D9005886FE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BC47FF6E2A207775005886FE /* ZilapOrionPersonalUseFuturistic-DzA3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZilapOrionPersonalUseFuturistic-DzA3.ttf"; sourceTree = "<group>"; };
+		BC47FF6F2A2077E4005886FE /* Planetary-Paparazzi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Planetary-Paparazzi-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +89,13 @@
 		BC47FF332A206311005886FE /* Planetary Paparazzi */ = {
 			isa = PBXGroup;
 			children = (
+				BC47FF6F2A2077E4005886FE /* Planetary-Paparazzi-Info.plist */,
 				BC47FF342A206311005886FE /* Planetary_PaparazziApp.swift */,
 				BC47FF4A2A20648C005886FE /* Models */,
 				BC47FF432A2063EA005886FE /* Views */,
 				BC47FF552A2067C6005886FE /* Components */,
 				BC47FF382A206313005886FE /* Assets.xcassets */,
+				BC47FF6D2A207763005886FE /* Font */,
 				BC47FF3A2A206313005886FE /* Preview Content */,
 				BC47FF672A207033005886FE /* Launch Screen.storyboard */,
 			);
@@ -110,10 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				BC47FF362A206311005886FE /* ContentView.swift */,
-				BC47FF442A2063F9005886FE /* WaterfallView.swift */,
 				BC47FF462A20643A005886FE /* SettingsView.swift */,
 				BC47FF482A206462005886FE /* ModalView.swift */,
 				BC47FF692A2070D9005886FE /* SplashView.swift */,
+				BC47FF442A2063F9005886FE /* WaterfallView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +147,14 @@
 				BC47FF652A206A1D005886FE /* Background.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		BC47FF6D2A207763005886FE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BC47FF6E2A207775005886FE /* ZilapOrionPersonalUseFuturistic-DzA3.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,8 +378,8 @@
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planetary-Paparazzi-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Planetary Paparazzi";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -400,8 +412,8 @@
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Planetary-Paparazzi-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Planetary Paparazzi";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
