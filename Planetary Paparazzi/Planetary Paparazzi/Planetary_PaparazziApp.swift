@@ -11,7 +11,7 @@ import SwiftUI
 struct Planetary_PaparazziApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
