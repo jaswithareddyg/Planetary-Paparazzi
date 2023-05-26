@@ -61,6 +61,12 @@ extension UserData: RequestDelegate {
             self.isLoading = false
         }
     }
-    
-    
 }
+
+/*
+ 
+ API Limitations (https://api.nasa.gov/):
+    Hourly Limit: 30 requests per IP address per hour
+    Daily Limit: 50 requests per IP address per day
+ 
+*/
