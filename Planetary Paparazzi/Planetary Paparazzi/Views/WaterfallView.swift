@@ -21,8 +21,6 @@ struct WaterfallView : View {
             return $userData.localApods
         case .random:
             return $userData.randomApods
-        case .saved:
-            return $userData.savedApods
         }
     }
     
@@ -32,10 +30,9 @@ struct WaterfallView : View {
                 .environmentObject(userData)
                 .padding(.bottom, 8)
                 .zIndex(100.0)
-                
             
             Picker(selection: $userData.currentLabel, label: Text("Mode")) {
-                ForEach(UserData.WfLabel.allCases, id: \.self) { type in
+                ForEach(UserData.Label.allCases, id: \.self) { type in
                     Text(type.rawValue)
                 }
             }
@@ -52,10 +49,7 @@ struct WaterfallView : View {
 }
 
 extension WaterfallView: RequestDelegate {
-    func requestError(_ error: Request.RequestError) {
-        
-    }
-    
+    func requestError(_ error: Request.RequestError) {}
     func requestSuccess(_ apods: [BlockData], _ type: Request.LoadType) {
         if type == .refresh {
             selectedContent.wrappedValue = apods
@@ -63,8 +57,6 @@ extension WaterfallView: RequestDelegate {
             selectedContent.wrappedValue.append(contentsOf: apods)
         }
     }
-    
-    
 }
 
 

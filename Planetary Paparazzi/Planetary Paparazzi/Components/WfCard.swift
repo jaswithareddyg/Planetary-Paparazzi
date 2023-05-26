@@ -8,34 +8,27 @@
 import SwiftUI
 
 struct WfCard : View {
-    
     @State var block: BlockData
     
     var apod: Result {
         block.content
     }
-    
     let aspect: CGFloat = 0.95
-    
     let height: CGFloat = 350
-    
     var width: CGFloat {
         height * aspect
     }
     
     @State var isPresent: Bool = false
-    
     @State var loadedImage: UIImage? = nil
     
     var modal: some View {
         let view = ModalView(block: $block, loadedImage: $loadedImage)
-        
         return view
     }
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            
             VStack {
                 if apod.mediaType == .Image {
                     AsyncImage(url: apod.url!, image: $loadedImage)
@@ -48,16 +41,13 @@ struct WfCard : View {
             }
             .frame(width: width, height: height)
             .background(Color.init(.systemGray5))
-            
-            
-            
+
             VStack(alignment: .leading , spacing: 0) {
                 
                 Text(apod.getFormatterDate())
                     .font(.headline)
-                    .foregroundColor(.secondary)
-                
-                
+                    .foregroundColor(.white)
+                                
                 HStack {
                     Text(apod.title)
                         .font(.title)
@@ -68,13 +58,10 @@ struct WfCard : View {
                     
                     Spacer()
                 }
-                
             }
             .padding([.leading, .trailing], 12)
             .padding([.top, .bottom], 6)
             .background(Background(color: .init(white: 0.4, alpha: 0.2), blur: true))
-            
-            
         }
         .sheet(isPresented: $isPresent, onDismiss: {
             self.isPresent = false

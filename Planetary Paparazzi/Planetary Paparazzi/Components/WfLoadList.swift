@@ -16,7 +16,7 @@ struct WfLoadList : View {
         case error = "cloud.bolt"
     }
     
-    var apodType: UserData.WfLabel
+    var apodType: UserData.Label
     
     @Binding var contents: [BlockData]
     
@@ -75,8 +75,6 @@ struct WfLoadList : View {
             UserData.shared.loadHandle?.cancel()
             UserData.shared.isLoading = true
             UserData.shared.sendOnlineRequest(delegate: self, type: type)
-        case .saved:
-            break
         }
     }
 }

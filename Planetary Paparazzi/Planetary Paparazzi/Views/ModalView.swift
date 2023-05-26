@@ -42,23 +42,10 @@ struct ModalView : View {
                         Text(apod.getFormatterDate())
                             .font(.headline)
                             .foregroundColor(.gray)
-                        
                         Spacer()
-                        
-                        Button(action: {
-                            self.block.favourite.toggle()
-                        }) {
-                            Image(systemName: self.block.favourite ? "star.fill" : "star")
-                                .imageScale(.small)
-                                .foregroundColor(self.block.favourite ? .yellow : .gray)
-                        }
-                        
-                        
                     }
                     
                 }
-                
-                
                 Text(apod.explanation)
                     .font(.body)
                     .lineLimit(nil)

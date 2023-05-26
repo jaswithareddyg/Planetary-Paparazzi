@@ -10,16 +10,12 @@ import SwiftUI
 
 struct BlockData: Hashable, Codable, Identifiable {
     var id: UUID = UUID()
-    
     let content: Result
-    
     var favourite: Bool = false
 }
 
 struct Result: Hashable, Codable,  Identifiable {
     var id: UUID = UUID()
-    
-    
     var copyright: String?
     var date: Date
     var url: URL?
@@ -113,7 +109,5 @@ let testApodArray = """
 """
 
 var decoder = JSONDecoder();
-
 let singleApod = try! decoder.decode(Result.self, from: testApodStr.data(using: .utf8)!)
-
 let arrayApods = try! decoder.decode(Array<Result>.self, from: testApodArray.data(using: .utf8)!)

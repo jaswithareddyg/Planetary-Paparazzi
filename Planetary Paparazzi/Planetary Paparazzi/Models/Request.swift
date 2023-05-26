@@ -39,9 +39,9 @@ struct Request {
         }
     }
     
-    // API Part
+    // API data
     var date: Date?
-    var concept_tags: Bool? // turn off
+    var concept_tags: Bool?
     var hd: Bool?
     var count: Int?
     var start_date: Date?
@@ -67,7 +67,6 @@ struct Request {
     }
     
     static private let requestUrl: URL = URL(string: "https://api.nasa.gov/planetary/apod")!
-    
     private var formatter: DateFormatter {
         let df = DateFormatter()
         df.dateFormat = "YYYY-MM-dd"
@@ -102,22 +101,17 @@ struct Request {
         if let concept_tags = self.concept_tags {
             dict.updateValue(concept_tags.description, forKey: ReflectionKey.thumbs.rawValue)
         }
-        
         return dict
     }
     
     func sendRequest() -> some AnyCancellable
-    // where S: Subscriber, S.Failure == RequestError, S.Input == [Result]
     {
         let header = makeRequestHeader().map { (key, value) -> URLQueryItem in
             URLQueryItem(name: key, value: value)
         }
-        
         var components = URLComponents(url: Self.requestUrl, resolvingAgainstBaseURL: false)
         components?.queryItems = header
-        
         guard let url = components?.url else { fatalError("request url wrong")}
-        
         var request = URLRequest(url: url);
         request.httpMethod = "GET"
         
@@ -128,10 +122,7 @@ struct Request {
             .tryMap({ (data, response) in
                 var results: [Result] = []
                 let decoder = JSONDecoder()
-                
-
                 print(String(data: data, encoding: .utf8)!)
-
                 
                 if let array = try? decoder.decode(Array<Result>.self, from: data) {
                     results.append(contentsOf: array)
@@ -144,21 +135,18 @@ struct Request {
                 }else {
                     throw RequestError.Other("Unknown Error")
                 }
-                
                 return results
             })
             .mapError({ error in
                 error as! RequestError
             })
             .sink(receiveCompletion: { (completion) in
-                
                 switch completion {
                 case .failure(let error):
                     self.boardcastFailure(error)
                 default:
                     break
                 }
-                
             })
             { (input: [Result]) in
                 let block: [BlockData] = input.map { (result) -> BlockData in
@@ -167,15 +155,12 @@ struct Request {
                 
                 self.boardcastSuccess(block)
             }
-            
-        
         return task
     }
 }
 
 protocol RequestDelegate {
     func requestError(_ error: Request.RequestError)
-    
     func requestSuccess(_ apods: [BlockData], _ type: Request.LoadType)
 }
 
