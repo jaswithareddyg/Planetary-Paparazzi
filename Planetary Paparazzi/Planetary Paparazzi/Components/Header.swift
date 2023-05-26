@@ -21,11 +21,6 @@ struct Header: View {
     var body: some View {
         
         VStack(alignment: .leading, spacing: 0) {
-            Text(currentDateStr.uppercased())
-                .font(.subheadline)
-                .bold()
-                .foregroundColor(.gray)
-            
             HStack {
                 Text("NASA's Astronomy Picture of the Day")
                     .font(.largeTitle)
@@ -39,21 +34,28 @@ struct Header: View {
                     Image(systemName: "arrow.2.circlepath.circle")
                         .imageScale(.large)
                         .rotationEffect(Angle(degrees: self.loadState ? btnAngle : 0))
-                        .animation(.easeInOut)
                         .disabled(self.loadState == true)
                         .onAppear {
                             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
                                 if self.loadState {
-                                    self.btnAngle += 12.0
-                                    self.btnAngle.formTruncatingRemainder(dividingBy: 360.0)
-                                }else {
-                                    self.btnAngle = 180.0
+                                    withAnimation(.easeInOut){
+                                        self.btnAngle += 12.0
+                                        self.btnAngle.formTruncatingRemainder(dividingBy: 360.0)
+                                    }
+                                } else {
+                                    withAnimation(.easeInOut){
+                                        self.btnAngle = 180.0
+                                    }
                                 }
                             }
                         }
                 }
             }
-            
+            Text(currentDateStr.uppercased())
+                .font(.subheadline)
+                .bold()
+                .foregroundColor(.gray)
+            Spacer()
             Divider()
         }
         .padding()
