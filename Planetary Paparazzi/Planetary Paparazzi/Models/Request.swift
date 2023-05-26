@@ -75,35 +75,35 @@ struct Request {
     }
     
     private func makeRequestHeader() -> [String: String] {
-        var dic: [String: String] = [:]
+        var dict: [String: String] = [:]
         //let reflection = Mirror(reflecting: self);
-        dic.updateValue(api_key, forKey: ReflectionKey.api_key.rawValue)
+        dict.updateValue(api_key, forKey: ReflectionKey.api_key.rawValue)
         
         let dateFormat = self.formatter;
         
         if let date = self.date {
-            dic.updateValue(dateFormat.string(from: date), forKey: ReflectionKey.date.rawValue)
+            dict.updateValue(dateFormat.string(from: date), forKey: ReflectionKey.date.rawValue)
         }
         if let hd = self.hd {
-            dic.updateValue(hd.description, forKey: ReflectionKey.hd.rawValue)
+            dict.updateValue(hd.description, forKey: ReflectionKey.hd.rawValue)
         }
         if let count = self.count {
-            dic.updateValue(count.description, forKey: ReflectionKey.count.rawValue)
+            dict.updateValue(count.description, forKey: ReflectionKey.count.rawValue)
         }
         if let start_date = self.start_date {
-            dic.updateValue(dateFormat.string(from: start_date), forKey: ReflectionKey.start_date.rawValue)
+            dict.updateValue(dateFormat.string(from: start_date), forKey: ReflectionKey.start_date.rawValue)
         }
         if let end_date = self.end_date {
-            dic.updateValue(dateFormat.string(from: end_date), forKey: ReflectionKey.end_date.rawValue)
+            dict.updateValue(dateFormat.string(from: end_date), forKey: ReflectionKey.end_date.rawValue)
         }
         if let thumbs = self.thumbs {
-            dic.updateValue(thumbs.description, forKey: ReflectionKey.thumbs.rawValue)
+            dict.updateValue(thumbs.description, forKey: ReflectionKey.thumbs.rawValue)
         }
         if let concept_tags = self.concept_tags {
-            dic.updateValue(concept_tags.description, forKey: ReflectionKey.thumbs.rawValue)
+            dict.updateValue(concept_tags.description, forKey: ReflectionKey.thumbs.rawValue)
         }
         
-        return dic
+        return dict
     }
     
     func sendRequest() -> some AnyCancellable

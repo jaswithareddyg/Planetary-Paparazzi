@@ -23,7 +23,7 @@ struct SplashView: View {
                     Spacer()
                     // text with custom font and effect
                     Text("Planetary Paparazzi")
-                        .font(.custom("ZilapOrionPersonalUseFuturistic-DzA3.ttf", size: 60))
+                        .font(.custom("Futura", size: 60))
                         .foregroundColor(Color(hue: 0.001, saturation: 0.0, brightness: 0.98))
                         .multilineTextAlignment(.center)
                         .padding()

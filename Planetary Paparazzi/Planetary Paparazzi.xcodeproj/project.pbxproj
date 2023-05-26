@@ -56,7 +56,6 @@
 		BC47FF672A207033005886FE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BC47FF692A2070D9005886FE /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		BC47FF6E2A207775005886FE /* ZilapOrionPersonalUseFuturistic-DzA3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZilapOrionPersonalUseFuturistic-DzA3.ttf"; sourceTree = "<group>"; };
-		BC47FF6F2A2077E4005886FE /* Planetary-Paparazzi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Planetary-Paparazzi-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +88,6 @@
 		BC47FF332A206311005886FE /* Planetary Paparazzi */ = {
 			isa = PBXGroup;
 			children = (
-				BC47FF6F2A2077E4005886FE /* Planetary-Paparazzi-Info.plist */,
 				BC47FF342A206311005886FE /* Planetary_PaparazziApp.swift */,
 				BC47FF4A2A20648C005886FE /* Models */,
 				BC47FF432A2063EA005886FE /* Views */,
