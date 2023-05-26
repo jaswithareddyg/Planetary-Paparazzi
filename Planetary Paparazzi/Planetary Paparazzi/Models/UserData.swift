@@ -8,6 +8,8 @@
 import SwiftUI
 import Combine
 
+/// LOADS USER DATA
+
 final class UserData: ObservableObject {
     private init() {}
     static let shared = UserData()

@@ -13,6 +13,7 @@ struct Card : View {
     var apod: Result {
         block.content
     }
+    // setting image sizes
     let aspect: CGFloat = 0.95
     let height: CGFloat = 350
     var width: CGFloat {
@@ -77,7 +78,6 @@ struct Card : View {
 
     }
 }
-
 
 struct BlockView_Previews : PreviewProvider {
     static var previews: some View {

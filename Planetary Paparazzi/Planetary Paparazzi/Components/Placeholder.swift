@@ -37,3 +37,11 @@ struct Placeholder_Previews : PreviewProvider {
         Placeholder(systemName: "cloud.bolt" , showTitle: "You have exceeded your rate limit. Try again later or contact us at https://api.nasa.gov:443/contact/ for assistance")
     }
 }
+
+/*
+ 
+ API Limitations (https://api.nasa.gov/):
+    Hourly Limit: 30 requests per IP address per hour
+    Daily Limit: 50 requests per IP address per day
+ 
+*/

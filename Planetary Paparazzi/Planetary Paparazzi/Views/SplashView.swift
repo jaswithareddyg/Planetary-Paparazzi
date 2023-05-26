@@ -43,7 +43,7 @@ struct SplashView: View {
             
             // shows the splash screen for 10 seconds and also prints to console
             .onAppear{
-                print("Splash Screen is loading for 10 seconds...")
+                print("Splash Screen will load for 10 seconds...")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                     self.isActive = true
                 }
@@ -53,11 +53,12 @@ struct SplashView: View {
 }
 
 /// extension to convert hex codes to RGB values that Swift understands.
+///  SOURCE: https://github.com/SwiftGuides/HexColorCode-Extension/blob/master/UIColor%2BHex.swift
+
 extension Color {
     init(hex: String) {
         let scanner = Scanner(string: hex)
         var rgbValue: UInt64 = 0
-
         scanner.scanHexInt64(&rgbValue)
 
         let r = Double((rgbValue & 0xff0000) >> 16) / 255.0

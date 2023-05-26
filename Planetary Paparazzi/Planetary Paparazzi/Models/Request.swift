@@ -19,8 +19,7 @@ struct Request {
         case append
     }
     
-    let type: LoadType
-    
+    let type: LoadType    
     private var delegate: [RequestDelegate] = []
     
     mutating func bindingDelegate(_ delegate: RequestDelegate) {

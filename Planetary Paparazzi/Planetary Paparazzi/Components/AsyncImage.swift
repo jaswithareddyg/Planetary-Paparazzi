@@ -63,7 +63,7 @@ struct AsyncImage: View {
 struct AsyncImage_Previews : PreviewProvider {
     static var previews: some View {
         
-        AsyncImage(url: URL(string: "https://img3.doubanio.com/view/status/l/public/4dc4add0fd63152.jpg")!, image: .constant(nil))
+        AsyncImage(url: URL(string: "https://images.pexels.com/photos/3861976/pexels-photo-3861976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")!, image: .constant(nil))
             .frame(width: 300, height: 300)
             .background(Color.white)
             .cornerRadius(8)

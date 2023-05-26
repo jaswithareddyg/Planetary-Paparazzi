@@ -22,8 +22,8 @@ final class UserSetting: ObservableObject {
             if let value = UserDefaults.getCustomValue(for: .ApiKey) as? String {
                 return value
             }else {
-                UserDefaults.saveCustomValue(for: .ApiKey, value: "Enter NASA's API Key")
-                return "Enter NASA's API Key"
+                UserDefaults.saveCustomValue(for: .ApiKey, value: "DEMO_KEY")
+                return "DEMO_KEY"
             }
         }
     }

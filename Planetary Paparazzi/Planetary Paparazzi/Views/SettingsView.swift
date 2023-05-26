@@ -19,8 +19,7 @@ struct SettingView : View {
                             Image(systemName: "antenna.radiowaves.left.and.right")
                             Text("API Key")
                                 .padding(.trailing, 24)
-                            Spacer()
-                            
+                            Spacer()                            
                             Text(setting.apiKey)
                                 .foregroundColor(.secondary)
                                 .truncationMode(.tail)

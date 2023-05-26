@@ -93,8 +93,7 @@ extension LoadList: RequestDelegate {
     }
     
     func requestSuccess(_ apods: [BlockData], _ type: Request.LoadType) {
-        isError = false
-        
+        isError = false        
         DispatchQueue.main.sync {
             switch type {
             case .refresh:
