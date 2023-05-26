@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  final project
+//  Planetary Paparazzi
 //
 //  Created by Jaswitha Reddy G on 5/25/23.
 //

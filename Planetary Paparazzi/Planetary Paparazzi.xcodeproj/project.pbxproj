@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC47FF162A20447B005886FE /* final_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF152A20447B005886FE /* final_projectApp.swift */; };
-		BC47FF182A20447B005886FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF172A20447B005886FE /* ContentView.swift */; };
-		BC47FF1A2A20447D005886FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF192A20447D005886FE /* Assets.xcassets */; };
-		BC47FF1D2A20447D005886FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF1C2A20447D005886FE /* Preview Assets.xcassets */; };
+		BC47FF352A206311005886FE /* Planetary_PaparazziApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF342A206311005886FE /* Planetary_PaparazziApp.swift */; };
+		BC47FF372A206311005886FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC47FF362A206311005886FE /* ContentView.swift */; };
+		BC47FF392A206313005886FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF382A206313005886FE /* Assets.xcassets */; };
+		BC47FF3C2A206313005886FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC47FF3B2A206313005886FE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC47FF122A20447B005886FE /* final project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC47FF152A20447B005886FE /* final_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_projectApp.swift; sourceTree = "<group>"; };
-		BC47FF172A20447B005886FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BC47FF192A20447D005886FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC47FF1C2A20447D005886FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC47FF312A206311005886FE /* Planetary Paparazzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planetary Paparazzi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC47FF342A206311005886FE /* Planetary_PaparazziApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planetary_PaparazziApp.swift; sourceTree = "<group>"; };
+		BC47FF362A206311005886FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC47FF382A206313005886FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC47FF3B2A206313005886FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC47FF0F2A20447B005886FE /* Frameworks */ = {
+		BC47FF2E2A206311005886FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC47FF092A20447B005886FE = {
+		BC47FF282A206311005886FE = {
 			isa = PBXGroup;
 			children = (
-				BC47FF142A20447B005886FE /* final project */,
-				BC47FF132A20447B005886FE /* Products */,
+				BC47FF332A206311005886FE /* Planetary Paparazzi */,
+				BC47FF322A206311005886FE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BC47FF132A20447B005886FE /* Products */ = {
+		BC47FF322A206311005886FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC47FF122A20447B005886FE /* final project.app */,
+				BC47FF312A206311005886FE /* Planetary Paparazzi.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC47FF142A20447B005886FE /* final project */ = {
+		BC47FF332A206311005886FE /* Planetary Paparazzi */ = {
 			isa = PBXGroup;
 			children = (
-				BC47FF152A20447B005886FE /* final_projectApp.swift */,
-				BC47FF172A20447B005886FE /* ContentView.swift */,
-				BC47FF192A20447D005886FE /* Assets.xcassets */,
-				BC47FF1B2A20447D005886FE /* Preview Content */,
+				BC47FF342A206311005886FE /* Planetary_PaparazziApp.swift */,
+				BC47FF362A206311005886FE /* ContentView.swift */,
+				BC47FF382A206313005886FE /* Assets.xcassets */,
+				BC47FF3A2A206313005886FE /* Preview Content */,
 			);
-			path = "final project";
+			path = "Planetary Paparazzi";
 			sourceTree = "<group>";
 		};
-		BC47FF1B2A20447D005886FE /* Preview Content */ = {
+		BC47FF3A2A206313005886FE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BC47FF1C2A20447D005886FE /* Preview Assets.xcassets */,
+				BC47FF3B2A206313005886FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC47FF112A20447B005886FE /* final project */ = {
+		BC47FF302A206311005886FE /* Planetary Paparazzi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC47FF202A20447D005886FE /* Build configuration list for PBXNativeTarget "final project" */;
+			buildConfigurationList = BC47FF3F2A206313005886FE /* Build configuration list for PBXNativeTarget "Planetary Paparazzi" */;
 			buildPhases = (
-				BC47FF0E2A20447B005886FE /* Sources */,
-				BC47FF0F2A20447B005886FE /* Frameworks */,
-				BC47FF102A20447B005886FE /* Resources */,
+				BC47FF2D2A206311005886FE /* Sources */,
+				BC47FF2E2A206311005886FE /* Frameworks */,
+				BC47FF2F2A206311005886FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "final project";
-			productName = "final project";
-			productReference = BC47FF122A20447B005886FE /* final project.app */;
+			name = "Planetary Paparazzi";
+			productName = "Planetary Paparazzi";
+			productReference = BC47FF312A206311005886FE /* Planetary Paparazzi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BC47FF0A2A20447B005886FE /* Project object */ = {
+		BC47FF292A206311005886FE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					BC47FF112A20447B005886FE = {
+					BC47FF302A206311005886FE = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = BC47FF0D2A20447B005886FE /* Build configuration list for PBXProject "final project" */;
+			buildConfigurationList = BC47FF2C2A206311005886FE /* Build configuration list for PBXProject "Planetary Paparazzi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = BC47FF092A20447B005886FE;
-			productRefGroup = BC47FF132A20447B005886FE /* Products */;
+			mainGroup = BC47FF282A206311005886FE;
+			productRefGroup = BC47FF322A206311005886FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC47FF112A20447B005886FE /* final project */,
+				BC47FF302A206311005886FE /* Planetary Paparazzi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC47FF102A20447B005886FE /* Resources */ = {
+		BC47FF2F2A206311005886FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC47FF1D2A20447D005886FE /* Preview Assets.xcassets in Resources */,
-				BC47FF1A2A20447D005886FE /* Assets.xcassets in Resources */,
+				BC47FF3C2A206313005886FE /* Preview Assets.xcassets in Resources */,
+				BC47FF392A206313005886FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BC47FF0E2A20447B005886FE /* Sources */ = {
+		BC47FF2D2A206311005886FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC47FF182A20447B005886FE /* ContentView.swift in Sources */,
-				BC47FF162A20447B005886FE /* final_projectApp.swift in Sources */,
+				BC47FF372A206311005886FE /* ContentView.swift in Sources */,
+				BC47FF352A206311005886FE /* Planetary_PaparazziApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BC47FF1E2A20447D005886FE /* Debug */ = {
+		BC47FF3D2A206313005886FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		BC47FF1F2A20447D005886FE /* Release */ = {
+		BC47FF3E2A206313005886FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,86 +259,96 @@
 			};
 			name = Release;
 		};
-		BC47FF212A20447D005886FE /* Debug */ = {
+		BC47FF402A206313005886FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"final project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Planetary Paparazzi/Preview Content\"";
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Planetary Paparazzi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jasuchicago.final-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasuchicago.Planetary-Paparazzi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		BC47FF222A20447D005886FE /* Release */ = {
+		BC47FF412A206313005886FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"final project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Planetary Paparazzi/Preview Content\"";
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Planetary Paparazzi";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jasuchicago.final-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "jasuchicago.Planetary-Paparazzi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC47FF0D2A20447B005886FE /* Build configuration list for PBXProject "final project" */ = {
+		BC47FF2C2A206311005886FE /* Build configuration list for PBXProject "Planetary Paparazzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC47FF1E2A20447D005886FE /* Debug */,
-				BC47FF1F2A20447D005886FE /* Release */,
+				BC47FF3D2A206313005886FE /* Debug */,
+				BC47FF3E2A206313005886FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC47FF202A20447D005886FE /* Build configuration list for PBXNativeTarget "final project" */ = {
+		BC47FF3F2A206313005886FE /* Build configuration list for PBXNativeTarget "Planetary Paparazzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC47FF212A20447D005886FE /* Debug */,
-				BC47FF222A20447D005886FE /* Release */,
+				BC47FF402A206313005886FE /* Debug */,
+				BC47FF412A206313005886FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BC47FF0A2A20447B005886FE /* Project object */;
+	rootObject = BC47FF292A206311005886FE /* Project object */;
 }
