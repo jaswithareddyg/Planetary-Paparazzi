@@ -31,7 +31,7 @@ Utilizing NASA's APOD API, Planetary Paparazzi provides seamless access to a vas
 
 ## Additional Information
 
-- This project was developed using XCode, Combine and SwiftUI.
+- This project was developed using XCode, Combine, and SwiftUI.
 - For issues or questions, contact [(Jas) Jaswitha](mailto:jaswithareddyguntaka@gmail.com).
 
 Explore the universe with Planetary Paparazzi, your daily portal to the cosmos. 🚀🌌
